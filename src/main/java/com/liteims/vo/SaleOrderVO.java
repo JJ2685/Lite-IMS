@@ -1,6 +1,6 @@
-package com.atguigu.liteims.vo;
+package com.liteims.vo;
 
-import com.atguigu.liteims.entity.SaleOrderItem;
+import com.liteims.entity.SaleOrderItem;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;

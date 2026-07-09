@@ -1,6 +1,6 @@
-package com.atguigu.liteims.service;
+package com.liteims.service;
 
-import com.atguigu.liteims.entity.Customer;
+import com.liteims.entity.Customer;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 public interface CustomerService extends IService<Customer> {

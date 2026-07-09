@@ -1,9 +1,9 @@
-package com.atguigu.liteims.service.impl;
+package com.liteims.service.impl;
 
-import com.atguigu.liteims.entity.Product;
-import com.atguigu.liteims.mapper.ProductMapper;
-import com.atguigu.liteims.service.ProductService;
-import com.atguigu.liteims.vo.ProductVO;
+import com.liteims.entity.Product;
+import com.liteims.mapper.ProductMapper;
+import com.liteims.service.ProductService;
+import com.liteims.vo.ProductVO;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;

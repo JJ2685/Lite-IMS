@@ -1,7 +1,7 @@
-package com.atguigu.liteims.service;
+package com.liteims.service;
 
 
-import com.atguigu.liteims.vo.DashboardVO;
+import com.liteims.vo.DashboardVO;
 
 public interface DashboardService {
     /**

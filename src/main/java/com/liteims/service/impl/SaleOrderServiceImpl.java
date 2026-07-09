@@ -1,8 +1,8 @@
-package com.atguigu.liteims.service.impl;
+package com.liteims.service.impl;
 
-import com.atguigu.liteims.entity.SaleOrder;
-import com.atguigu.liteims.mapper.SaleOrderMapper;
-import com.atguigu.liteims.service.SaleOrderService;
+import com.liteims.entity.SaleOrder;
+import com.liteims.mapper.SaleOrderMapper;
+import com.liteims.service.SaleOrderService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 

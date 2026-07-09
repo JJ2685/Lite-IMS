@@ -1,4 +1,4 @@
-package com.atguigu.liteims.entity;
+package com.liteims.entity;
 
 import com.baomidou.mybatisplus.annotation.*;
 import com.fasterxml.jackson.annotation.JsonFormat;

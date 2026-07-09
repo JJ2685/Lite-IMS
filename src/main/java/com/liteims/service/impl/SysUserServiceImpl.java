@@ -1,9 +1,9 @@
-package com.atguigu.liteims.service.impl;
+package com.liteims.service.impl;
 
-import com.atguigu.liteims.dto.SysUserDTO;
-import com.atguigu.liteims.entity.SysUser;
-import com.atguigu.liteims.mapper.SysUserMapper;
-import com.atguigu.liteims.service.SysUserService;
+import com.liteims.dto.SysUserDTO;
+import com.liteims.entity.SysUser;
+import com.liteims.mapper.SysUserMapper;
+import com.liteims.service.SysUserService;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;

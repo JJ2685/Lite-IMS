@@ -1,10 +1,9 @@
-package com.atguigu.liteims.dto;
+package com.liteims.dto;
 
 import lombok.Data;
 import java.util.List;
 
 import io.swagger.v3.oas.annotations.media.Schema;
-import java.util.List;
 
 // DTO : 接口开发：  用于调用接口时接收数据。
 

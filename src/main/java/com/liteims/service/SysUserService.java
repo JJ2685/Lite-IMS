@@ -1,7 +1,7 @@
-package com.atguigu.liteims.service;
+package com.liteims.service;
 
-import com.atguigu.liteims.dto.SysUserDTO;
-import com.atguigu.liteims.entity.SysUser;
+import com.liteims.dto.SysUserDTO;
+import com.liteims.entity.SysUser;
 
 /**
  * 完成用户模块操作

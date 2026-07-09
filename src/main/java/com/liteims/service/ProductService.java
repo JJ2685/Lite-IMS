@@ -1,7 +1,7 @@
-package com.atguigu.liteims.service;
+package com.liteims.service;
 
-import com.atguigu.liteims.entity.Product;
-import com.atguigu.liteims.vo.ProductVO;
+import com.liteims.entity.Product;
+import com.liteims.vo.ProductVO;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.service.IService;
 

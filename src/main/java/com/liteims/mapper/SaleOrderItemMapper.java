@@ -1,6 +1,6 @@
-package com.atguigu.liteims.mapper;
+package com.liteims.mapper;
 
-import com.atguigu.liteims.entity.SaleOrderItem;
+import com.liteims.entity.SaleOrderItem;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 import org.apache.ibatis.annotations.Mapper;

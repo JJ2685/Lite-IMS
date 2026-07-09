@@ -1,12 +1,10 @@
-package com.atguigu.liteims.vo;
+package com.liteims.vo;
 
 import lombok.Data;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
 import io.swagger.v3.oas.annotations.media.Schema;
-import java.math.BigDecimal;
-import java.time.LocalDateTime;
 
 @Data
 @Schema(name = "ProductVO", description = "商品信息视图对象") // 类级别描述

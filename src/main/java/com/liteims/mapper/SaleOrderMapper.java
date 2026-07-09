@@ -1,6 +1,6 @@
-package com.atguigu.liteims.mapper;
+package com.liteims.mapper;
 
-import com.atguigu.liteims.entity.SaleOrder;
+import com.liteims.entity.SaleOrder;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 

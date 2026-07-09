@@ -1,4 +1,4 @@
-package com.atguigu.liteims.vo;
+package com.liteims.vo;
 
 import com.alibaba.excel.annotation.ExcelProperty;
 import com.alibaba.excel.annotation.write.style.ColumnWidth;

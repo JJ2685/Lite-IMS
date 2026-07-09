@@ -1,10 +1,9 @@
-package com.atguigu.liteims.vo;
+package com.liteims.vo;
 
 import lombok.Data;
 import java.math.BigDecimal;
 
 import io.swagger.v3.oas.annotations.media.Schema;
-import java.math.BigDecimal;
 
 //VO： Value Object  or   View Object 值对象或视图对象：用于封装页面加载数据。
 @Data

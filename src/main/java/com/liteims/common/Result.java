@@ -1,4 +1,4 @@
-package com.atguigu.liteims.common;
+package com.liteims.common;
 
 /**
   * 统一接口返回结果类
