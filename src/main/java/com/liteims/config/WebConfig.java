@@ -1,21 +1,21 @@
 package com.liteims.config;
 
-import com.liteims.controller.LoginController;
+import com.liteims.interceptor.LoginInterceptor;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Configurable;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
-@Configurable
+@Configuration
 public class WebConfig implements WebMvcConfigurer {
     @Autowired
-    LoginController loginController;
+    LoginInterceptor loginInterceptor;
 
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
-        registry.addInterceptor((HandlerInterceptor) loginController).
-                addPathPatterns("/api").
+        registry.addInterceptor(loginInterceptor).
+                addPathPatterns("/api/**").
                 excludePathPatterns("/api/login", "/api/logout");
     }
 }
