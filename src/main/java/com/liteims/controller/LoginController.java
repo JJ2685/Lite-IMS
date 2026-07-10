@@ -6,6 +6,7 @@ import com.liteims.entity.SysUser;
 import com.liteims.service.SysUserService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
+import jakarta.servlet.http.HttpSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -22,9 +23,10 @@ public class LoginController {
 
     @Operation(summary="通过用户名和密码登录")
     @RequestMapping(value="/login",method = POST)
-    public Result login(@RequestBody SysUserDTO sysUserDTO) {
+    public Result login(@RequestBody SysUserDTO sysUserDTO,HttpSession session) {
         SysUser sysUser=sysUserService.login(sysUserDTO);
         if(sysUser!=null){
+            session.setAttribute("sysUser",sysUser);
             return Result.success(sysUserDTO);
         }else{
             return Result.fail("账号或密码错误");
