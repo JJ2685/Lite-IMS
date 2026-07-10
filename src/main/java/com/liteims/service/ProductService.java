@@ -3,7 +3,7 @@ package com.liteims.service;
 import com.liteims.entity.Product;
 import com.liteims.vo.ProductVO;
 import com.baomidou.mybatisplus.core.metadata.IPage;
-import com.baomidou.mybatisplus.extension.service.IService;
+import com.baomidou.mybatisplus.spring.service.IService;
 
 public interface ProductService extends IService<Product> {
 

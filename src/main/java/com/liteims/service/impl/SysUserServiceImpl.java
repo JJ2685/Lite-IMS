@@ -5,7 +5,7 @@ import com.liteims.entity.SysUser;
 import com.liteims.mapper.SysUserMapper;
 import com.liteims.service.SysUserService;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
-import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.baomidou.mybatisplus.spring.service.impl.ServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -20,6 +20,12 @@ public class SysUserServiceImpl extends ServiceImpl<SysUserMapper, SysUser> impl
         LambdaQueryWrapper<SysUser> queryWrapper = new LambdaQueryWrapper<SysUser>();
         queryWrapper.eq(SysUser::getUsername, sysUserDTO.getUsername());
         SysUser sysUser = sysUserMapper.selectOne(queryWrapper);
-        return sysUser;
+            if(sysUser != null){
+                if(sysUser.getPassword().equals(sysUserDTO.getPassword())){
+                    sysUser.setPassword(null);//擦除密码
+                    return sysUser;
+                }
+            }
+        return null;
     }
 }

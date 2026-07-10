@@ -6,7 +6,6 @@ import com.liteims.mapper.SaleOrderMapper;
 import com.liteims.service.DashboardService;
 import com.liteims.vo.DashboardVO;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
-import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
