@@ -20,10 +20,10 @@ public class DashboardServiceImpl implements DashboardService {
     //Dashboard不是一个实体类，没有对应的表和Mapper接口，所以不能继承ServiceImpl<M,E>
 
     @Autowired
-    ProductMapper productMapper;
+    ProductMapper productMapper;  //商品表查询
 
     @Autowired
-    SaleOrderMapper saleOrderMapper;
+    SaleOrderMapper saleOrderMapper;  //订单表查询
 
     @Override
     public DashboardVO getStats() {
