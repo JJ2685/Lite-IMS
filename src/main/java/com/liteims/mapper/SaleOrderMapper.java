@@ -4,6 +4,7 @@ import com.liteims.entity.SaleOrder;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 
+import com.liteims.vo.SaleOrderVO;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import java.math.BigDecimal;
@@ -19,4 +20,6 @@ public interface SaleOrderMapper extends BaseMapper<SaleOrder> {
      * @return
      */
     BigDecimal getTotalSales();
+
+    IPage<SaleOrderVO> findPage(IPage<SaleOrderVO> page,String orderNo);
 }

@@ -9,4 +9,30 @@
       and status in (1,2,3)
    </select>
 
+   <resultMap id="SaleOrderVOResultMap" type="com.liteims.vo.SaleOrderVO" autoMapping="true">
+      <id property="id" column="id"/>
+      <result property="orderNo" column="order_no"/>
+      <result property="customerId" column="customer_id"/>
+      <result property="userId" column="user_id"/>
+      <result property="userName" column="username"/>
+      <result property="totalAmount" column="total_amount"/>
+      <result property="status" column="status"/>
+      <result property="createTime" column="create_time"/>
+
+
+      <result property="customerName" column="customer_name"/>
+      <!--对多关联 分段查询：关联SaleOrderItemMapper接口的xml文件查询-->
+      <collection property="items" column="id" select="com.liteims.mapper.SaleOrderItemMapper.getSaleOrderItemByOrderId"/>
+   </resultMap>
+
+   <select id="findPage" resultMap="SaleOrderVOResultMap">
+      select sale_order.*, customer.name
+      from sale_order
+        left join customer on sale_order.customer_id = customer.id
+      where sale_order.is_deleted=0
+      <if test="orderNo!=null and orderNo!=''">
+         and sale_order.order_no =#{orderNo}
+      </if>
+      order by sale_order.id desc
+   </select>
 </mapper>
