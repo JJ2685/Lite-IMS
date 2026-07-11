@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.liteims.mapper.ProductMapper">
 
-    <select id="selectProductList" resultType="com.liteims.vo.ProductVO">
+    <select id="findPage" resultType="com.liteims.vo.ProductVO">
         SELECT 
             p.id,
             p.category_id,
